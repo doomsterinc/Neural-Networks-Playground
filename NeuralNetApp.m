@@ -1,11 +1,4 @@
 classdef NeuralNetApp < handle
-    %NEURALNETAPP  Neural network Application
-    %
-    % Inspired by TensoreFlow playground:
-    % http://playground.tensorflow.org/
-    %
-    % See also: NeuralNet2
-    %
 
     %% Properties
     properties (SetAccess = private)
@@ -52,10 +45,10 @@ classdef NeuralNetApp < handle
         end
 
         function delete(this)
-            %DELETE  Destructor
+            % DELETE  Destructor
 
-            % close figure
-            %delete(this.handles.hFig);
+            close figure
+            delete(this.handles.hFig);
         end
     end
 
